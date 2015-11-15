@@ -13,7 +13,9 @@ You can install the most recent **ics 2 CalDAV Importer** version using pip: ::
 Usage
 =====
 
-	TODO: write simple and extended usage
+see `examples/redmine_to_owncloud_example.py`
+
+TODO: write simple and extended usage
 
 Contributing
 ============
