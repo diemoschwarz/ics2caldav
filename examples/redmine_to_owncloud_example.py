@@ -7,7 +7,7 @@ You must have these installed:
     2. OwnCloud instance
     3. redmine_ics_export plugin in your redmine instance
 
-Usign:
+Using:
     0. you could run this command without virtualenv but for clear workspace
         and number of dependancy it is recommended to install it in virtualenv.
     1. create a virtalenv and then `pip install ics2caldav` in it
