@@ -24,9 +24,9 @@ https://github.com/wtayyeb/ics2davcal
 Credits
 =======
 
-* w.Tayyeb: https://github.com/wtayyeb
+w.Tayyeb: https://github.com/wtayyeb
 
 License
 =======
 
-	ics2cadav is licensed under MIT license.
+ics2cadav is licensed under MIT license.

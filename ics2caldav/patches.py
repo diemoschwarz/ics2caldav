@@ -30,7 +30,7 @@ def patch_module_caldav():
                                            CalendarObjectResource._set_data,
                                            doc="vCal representation of the object")
     #
-    print 'patch caldav done.'
+    print('patch caldav done.')
 
 
 def patch_module_ics():
@@ -75,7 +75,7 @@ def patch_module_ics():
         if o.__name__ == 'o_end':
             Event._OUTPUTS[i] = o_end
 
-    print 'patch ics py done.'
+    print('patch ics py done.')
 
 
 
