@@ -2,7 +2,8 @@
 '''
 Created on Nov 15, 2015
 
-@author: wTayyeb
+@author: wTayyeb  https://github.com/wtayyeb
+@license: MIT
 '''
 
 from codecs import open

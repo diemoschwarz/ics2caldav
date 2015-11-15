@@ -2,7 +2,8 @@
 '''
 Created on Nov 14, 2015
 
-@author: wTayyeb
+@author: wTayyeb  https://github.com/wtayyeb
+@license: MIT
 '''
 
 from ics2caldav import Ical2CalDav

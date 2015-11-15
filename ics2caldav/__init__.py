@@ -2,8 +2,10 @@
 '''
 Created on Nov 14, 2015
 
-@author: wTayyeb
+@author: wTayyeb  https://github.com/wtayyeb
+@license: MIT
 '''
+
 import argparse
 import logging
 import os
