@@ -16,7 +16,7 @@ import caldav
 import ics
 
 
-__version__ = '0.2.1'
+__version__ = '0.2.2'
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
@@ -73,7 +73,7 @@ class Ical2CalDav(object):
         calendar = None
         for cal in calendars:
             cu = cal.canonical_url
-            logger.info('Found %s', cu)
+            logger.debug('Found %s', cu)
             if self.calendar_id and cu.endswith('/%s/' % self.calendar_id):
                 calendar = cal
 
@@ -189,4 +189,4 @@ class Ical2CalDav(object):
         hdlr = logging.StreamHandler()
         hdlr.setFormatter(logging.Formatter(logging.BASIC_FORMAT))
         logger.addHandler(hdlr)
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.INFO)
