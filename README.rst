@@ -21,7 +21,7 @@ Contributing
 ============
 
 Development of **ics2caldav** happens at github and any idea and contribution is welcome.  
-https://github.com/wtayyeb/ics2davcal
+https://github.com/wtayyeb/ics2caldav
 
 Credits
 =======
