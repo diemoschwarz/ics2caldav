@@ -4,7 +4,7 @@ import os
 import sys
 from ics2caldav import Ical2CalDav
 
-''' patching doesn't work anymore with current ics module
+''' patching doesn't work anymore with current ics module as of 07-2021
 print(sys.path)
 sys.path.append(os.path.abspath('../ics2caldav'))
 print(sys.path)
@@ -32,10 +32,19 @@ for arg in sys.argv[1:]:
 #print(args)
 #print(ics)
 
+passed = 0
+failed = 0
+failedlist = []
+
 for ic in ics:
     print('try', ic)
     try:
         Ical2CalDav.parse_args(args + ['-i', ic])
     except Exception as e:
         print("can't import %s: %s" % (ic, e))
-        
+        failedlist.append(ic)
+        failed = failed + 1
+    else:  
+        passed = passed + 1
+
+
