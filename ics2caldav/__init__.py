@@ -9,7 +9,7 @@ Created on Nov 14, 2015
 import argparse
 import logging
 import os
-import urllib2
+import urllib3
 import warnings
 
 import caldav
