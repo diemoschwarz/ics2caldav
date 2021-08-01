@@ -37,7 +37,7 @@ failed = 0
 failedlist = []
 
 for ic in ics:
-    print('try', ic)
+    print('try %d of %d:' % (passed + failed, len(ics)), ic)
     try:
         Ical2CalDav.parse_args(args + ['-i', ic])
     except Exception as e:
@@ -47,4 +47,6 @@ for ic in ics:
     else:  
         passed = passed + 1
 
-
+print('---------finished %d of %d\n' % (passed + failed, len(ics)))
+print('-------- %d of %d failed:\n' % (failed, len(ics)), failedlist)
+print('\n-------- %d of %d uploaded\n' % (passed, len(ics)))
